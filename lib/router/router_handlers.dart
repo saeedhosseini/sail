@@ -19,7 +19,7 @@ Handler rootHandler = Handler(
 /// 引导页
 Handler splashHandler = Handler(
     handlerFunc: (BuildContext? context, Map<String, List<String>> parameters) {
-      return const GuidePage();
+      return const HomePage();
     });
 
 /// 首页

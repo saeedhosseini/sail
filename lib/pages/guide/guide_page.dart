@@ -6,7 +6,6 @@ import 'package:sail_app/constant/app_strings.dart';
 import 'package:sail_app/models/user_model.dart';
 import 'package:sail_app/utils/navigator_util.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
 
 class GuidePage extends StatefulWidget {
   const GuidePage({Key? key}) : super(key: key);
@@ -50,7 +49,8 @@ class GuidePageState extends State<GuidePage> {
   }
 
   Widget _guideWidget() {
-    return Swiper(
+    return const SizedBox();
+    /*return Swiper(
       itemCount: guides.length,
       //item数量
       scrollDirection: Axis.horizontal,
@@ -86,6 +86,6 @@ class GuidePageState extends State<GuidePage> {
           });
         }
       }),
-    );
+    );*/
   }
 }

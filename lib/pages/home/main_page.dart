@@ -21,7 +21,7 @@ class MainPageState extends State<MainPage> {
 
     ScreenUtil.init(context, designSize: const Size(AppDimens.maxWidth, AppDimens.maxHeight));
     return userViewModel.isFirstOpen
-        ? const GuidePage()
+        ? const HomePage()
         : const HomePage();
   }
 }

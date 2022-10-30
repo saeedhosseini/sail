@@ -67,9 +67,9 @@ class ServerModel extends BaseModel {
             print(event);
             if (event.error != null) {
               var duration = const Duration(minutes: 1);
-              _serverEntityList![index]?.ping = duration;
+              _serverEntityList![index].ping = duration;
             } else if (event.response != null) {
-              _serverEntityList![index]?.ping = event.response?.time;
+              _serverEntityList![index].ping = event.response?.time;
             }
             notifyListeners();
 
