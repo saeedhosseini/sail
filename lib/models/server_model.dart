@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:flutter_icmp_ping/flutter_icmp_ping.dart';
+//import 'package:flutter_icmp_ping/flutter_icmp_ping.dart';
 import 'package:sail_app/constant/app_strings.dart';
 import 'package:sail_app/entity/server_entity.dart';
 import 'package:sail_app/models/base_model.dart';
@@ -61,7 +61,7 @@ class ServerModel extends BaseModel {
 
     switch (type) {
       case PingType.ping:
-        try {
+        /*try {
           final ping = Ping(host, count: 1, timeout: 1.0, interval: 1.0, ipv6: false);
           ping.stream.listen((event) {
             print(event);
@@ -77,7 +77,7 @@ class ServerModel extends BaseModel {
           });
         } catch (e) {
           rethrow;
-        }
+        }*/
         break;
       case PingType.tcp:
         Stopwatch stopwatch = Stopwatch()..start();
